@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "buildinsiderone", "buildinsiderone\buildinsiderone.csproj", "{23CEBBC8-D495-4980-AEA4-04A817C5C69D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D81171AC-46F0-41A3-8B06-D95EDAAD62B9}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23CEBBC8-D495-4980-AEA4-04A817C5C69D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23CEBBC8-D495-4980-AEA4-04A817C5C69D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23CEBBC8-D495-4980-AEA4-04A817C5C69D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23CEBBC8-D495-4980-AEA4-04A817C5C69D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
