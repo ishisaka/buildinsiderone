@@ -19,5 +19,14 @@ namespace buildinsiderone
         private void MessageButton_Click(object sender, EventArgs e) {
             MessageLabel.Text = "第1回 BuildInsider OFFLINEにようこそ";
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e) {
+            this.Close();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e) {
+            var aboutForm = new About();
+            aboutForm.Show();
+        }
     }
 }
