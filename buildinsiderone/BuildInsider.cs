@@ -17,7 +17,7 @@ namespace buildinsiderone
         }
 
         private void MessageButton_Click(object sender, EventArgs e) {
-            MessageBox.Show("第1回 BuildInsider OFFLINEにようこそ");
+            MessageLabel.Text = "第1回 BuildInsider OFFLINEにようこそ";
         }
     }
 }

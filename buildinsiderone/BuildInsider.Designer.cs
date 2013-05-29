@@ -26,6 +26,7 @@
         /// </summary>
         private void InitializeComponent() {
             this.MessageButton = new System.Windows.Forms.Button();
+            this.MessageLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // MessageButton
@@ -38,11 +39,22 @@
             this.MessageButton.UseVisualStyleBackColor = true;
             this.MessageButton.Click += new System.EventHandler(this.MessageButton_Click);
             // 
+            // MessageLabel
+            // 
+            this.MessageLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MessageLabel.Location = new System.Drawing.Point(51, 19);
+            this.MessageLabel.Name = "MessageLabel";
+            this.MessageLabel.Size = new System.Drawing.Size(521, 17);
+            this.MessageLabel.TabIndex = 1;
+            this.MessageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // BuildInsider
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(613, 102);
+            this.Controls.Add(this.MessageLabel);
             this.Controls.Add(this.MessageButton);
             this.Name = "BuildInsider";
             this.Text = "BuildInsider";
@@ -53,6 +65,7 @@
         #endregion
 
         private System.Windows.Forms.Button MessageButton;
+        private System.Windows.Forms.Label MessageLabel;
     }
 }
 
