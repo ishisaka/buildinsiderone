@@ -26,7 +26,7 @@ namespace buildinsiderone
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e) {
             var aboutForm = new About();
-            aboutForm.Show();
+            aboutForm.ShowDialog(this);
         }
     }
 }
