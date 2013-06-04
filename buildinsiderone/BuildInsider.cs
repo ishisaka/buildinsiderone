@@ -12,12 +12,35 @@ namespace buildinsiderone
 {
     public partial class BuildInsider : Form
     {
+        private string message = "";
+
         public BuildInsider() {
             InitializeComponent();
         }
 
         private void MessageButton_Click(object sender, EventArgs e) {
-            MessageBox.Show("第1回 BuildInsider OFFLINEにようこそ");
+            MessageLabel.Text = message;
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e) {
+            this.Close();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e) {
+            var aboutForm = new About();
+            aboutForm.ShowDialog(this);
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e) {
+            if (openFileDialog.ShowDialog() == DialogResult.OK) {
+                var reader = new System.IO.StreamReader(
+                    openFileDialog.FileName,
+                    System.Text.Encoding.GetEncoding("utf-8")
+                    );
+                message = reader.ReadLine();
+                reader.Close();
+            }
+
         }
     }
 }
